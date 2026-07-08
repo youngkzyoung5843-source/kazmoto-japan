@@ -600,6 +600,49 @@ img { max-width: 100%; height: auto; display: block; }
   font-size: 18px;
 }
 
+.contact-form label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--ink-soft);
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 11px 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font: inherit;
+  margin-bottom: 16px;
+  background: var(--white);
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--brand-light);
+  box-shadow: 0 0 0 3px rgba(42, 111, 150, 0.12);
+}
+
+.contact-form textarea { min-height: 140px; resize: vertical; }
+
+.contact-form .required::after {
+  content: " *";
+  color: #dc2626;
+}
+
+.form-note {
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+.form-honey { display: none !important; }
+
 /* CTA band */
 .cta-band {
   background: linear-gradient(135deg, var(--brand) 0%, var(--brand-light) 100%);

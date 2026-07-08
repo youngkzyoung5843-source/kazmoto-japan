@@ -30,38 +30,77 @@
   <section class="page-hero">
     <div class="container">
       <h1>お問い合わせ</h1>
-      <p>新規取引のご相談、卸売条件のお問い合わせ、書類送付のご依頼など、下記宛先までご連絡ください。</p>
+      <p>新規取引のご相談、卸売条件のお問い合わせ、書類送付のご依頼など、下記フォームよりお送りください。</p>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
-      <div class="contact-card" style="max-width: 720px; margin: 0 auto 24px;">
-        <h3>お問い合わせ先</h3>
-        <table class="data-table">
-          <tr>
-            <th>会社名</th>
-            <td>Kazmoto合同会社</td>
-          </tr>
-          <tr>
-            <th>担当</th>
-            <td>代表社員 岩本 和也</td>
-          </tr>
-          <tr>
-            <th>営業所</th>
-            <td>〒221-0825 神奈川県横浜市神奈川区反町1-1-1 ファイネストⅡ 201</td>
-          </tr>
-          <tr>
-            <th>対応時間</th>
-            <td>平日 10:00〜18:00（土日祝除く）</td>
-          </tr>
-        </table>
-      </div>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>お問い合わせ先</h3>
+          <table class="data-table">
+            <tr>
+              <th>会社名</th>
+              <td>Kazmoto合同会社</td>
+            </tr>
+            <tr>
+              <th>担当</th>
+              <td>代表社員 岩本 和也</td>
+            </tr>
+            <tr>
+              <th>メール</th>
+              <td>kazuya@kazmoto.co.jp</td>
+            </tr>
+            <tr>
+              <th>営業所</th>
+              <td>〒221-0825 神奈川県横浜市神奈川区反町1-1-1 ファイネストⅡ 201</td>
+            </tr>
+            <tr>
+              <th>対応時間</th>
+              <td>平日 10:00〜18:00（土日祝除く）</td>
+            </tr>
+          </table>
+          <div class="notice-box" style="margin-top: 20px;">
+            <strong>新規取引をご検討の方へ</strong><br>
+            貴社名・取引希望商品・想定数量・希望条件をお書き添えいただけると、スムーズにご対応できます。
+          </div>
+        </div>
 
-      <div class="notice-box" style="max-width: 720px; margin: 0 auto;">
-        <strong>新規取引をご検討の方へ</strong><br>
-        お問い合わせの際は、貴社名・取引希望商品・想定数量・希望条件をお書き添えいただけると、スムーズにご対応できます。
-        必要に応じて、登記簿謄本・代表者確認書類等のご提出をお願いする場合があります。
+        <div class="contact-card">
+          <h3>お問い合わせフォーム</h3>
+          <form class="contact-form" action="https://formsubmit.co/kazuya@kazmoto.co.jp" method="POST">
+            <input type="hidden" name="_subject" value="【Kazmoto 法人】取引・お問い合わせ">
+            <input type="hidden" name="_next" value="https://kazmoto.jp/corp/thanks.html">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+            <label for="company">会社名</label>
+            <input id="company" name="company" type="text" placeholder="株式会社〇〇">
+
+            <label for="name">ご担当者名 *</label>
+            <input id="name" name="name" type="text" required placeholder="山田 太郎">
+
+            <label for="email">メールアドレス *</label>
+            <input id="email" name="email" type="email" required placeholder="example@company.co.jp">
+
+            <label for="category">お問い合わせ種別 *</label>
+            <select id="category" name="category" required>
+              <option value="">選択してください</option>
+              <option value="新規取引">新規取引のご相談</option>
+              <option value="卸売条件">卸売条件のお問い合わせ</option>
+              <option value="書類・カタログ">書類・カタログのご依頼</option>
+              <option value="その他">その他</option>
+            </select>
+
+            <label for="message">お問い合わせ内容 *</label>
+            <textarea id="message" name="message" required placeholder="取引希望商品・数量・条件など"></textarea>
+
+            <button type="submit" class="btn btn-dark">送信する</button>
+            <p class="form-note">送信により、<a href="privacy.html">プライバシーポリシー</a>に同意したものとみなします。</p>
+          </form>
+        </div>
       </div>
     </div>
   </section>
