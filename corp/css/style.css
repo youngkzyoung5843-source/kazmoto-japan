@@ -157,6 +157,96 @@ img { max-width: 100%; height: auto; }
   max-width: 560px;
 }
 
+.hero-tagline {
+  margin: 0 0 28px;
+  font-size: clamp(16px, 2.2vw, 20px);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  opacity: 0.88;
+  font-style: italic;
+}
+
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.philosophy-block {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 32px;
+  box-shadow: var(--shadow);
+}
+
+.philosophy-block p {
+  margin: 0 0 16px;
+  font-size: 16px;
+  line-height: 1.85;
+  color: var(--slate);
+}
+
+.philosophy-block p:last-child { margin-bottom: 0; }
+
+.philosophy-en {
+  border-color: rgba(37, 99, 235, 0.15);
+  background: var(--accent-soft);
+}
+
+.philosophy-en p { color: var(--navy); }
+
+.promise-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.promise-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 28px;
+  box-shadow: var(--shadow);
+}
+
+.promise-card h3 {
+  margin: 0 0 12px;
+  font-size: 20px;
+  color: var(--navy);
+}
+
+.promise-ja {
+  margin: 0;
+  font-size: 15px;
+  color: var(--slate);
+  line-height: 1.7;
+}
+
+.promise-divider {
+  height: 1px;
+  background: var(--line);
+  margin: 20px 0 16px;
+}
+
+.promise-en-label {
+  margin: 0 0 6px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.promise-en {
+  margin: 0;
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
 .hero-actions {
   display: flex;
   gap: 12px;
@@ -215,6 +305,27 @@ img { max-width: 100%; height: auto; }
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: var(--radius);
   padding: 28px;
+}
+
+.hero-aside {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hero-photo {
+  margin: 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: var(--shadow);
+}
+
+.hero-photo img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
 }
 
 .hero-card h2 {
@@ -534,6 +645,19 @@ img { max-width: 100%; height: auto; }
   margin-top: 8px;
 }
 
+.form-error {
+  margin: 0 0 16px;
+  padding: 14px 16px;
+  border-radius: 10px;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #991b1b;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.form-honey { display: none !important; }
+
 /* Footer */
 .site-footer {
   background: var(--navy);
@@ -602,7 +726,9 @@ img { max-width: 100%; height: auto; }
   .trust-bar,
   .steps,
   .contact-grid,
-  .footer-grid {
+  .footer-grid,
+  .philosophy-grid,
+  .promise-grid {
     grid-template-columns: 1fr;
   }
 

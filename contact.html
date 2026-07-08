@@ -62,12 +62,14 @@
         <p style="color: var(--ink-soft); margin: 0 0 20px;">
           通常、2営業日以内に <strong>kazuya@kazmoto.co.jp</strong> より返信いたします。
         </p>
-        <form class="contact-form" action="https://formsubmit.co/kazuya@kazmoto.co.jp" method="POST">
+        <form class="contact-form" data-formsubmit action="https://formsubmit.co/kazuya@kazmoto.co.jp" method="POST" data-thanks="thanks.html">
           <input type="hidden" name="_subject" value="【Kazmoto Japan】お問い合わせ">
-          <input type="hidden" name="_next" value="https://kazmoto.jp/thanks.html">
+          <input type="hidden" name="_next" value="">
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_captcha" value="false">
           <input type="text" name="_honey" class="form-honey" tabindex="-1" autocomplete="off">
+
+          <p class="form-error" role="alert" hidden></p>
 
           <label class="required" for="name">お名前</label>
           <input id="name" name="name" type="text" required placeholder="山田 太郎">
