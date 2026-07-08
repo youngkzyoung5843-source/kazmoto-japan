@@ -71,12 +71,35 @@ img { max-width: 100%; height: auto; display: block; }
 .logo {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 0;
   color: var(--ink);
   text-decoration: none;
 }
 
 .logo:hover { text-decoration: none; }
+
+.logo-wordmark {
+  display: block;
+  height: 38px;
+  width: auto;
+}
+
+.logo-wordmark--corp {
+  height: 34px;
+}
+
+.logo-wordmark--footer {
+  height: 32px;
+  margin-bottom: 12px;
+  filter: brightness(0) invert(1);
+  opacity: 0.92;
+}
+
+.logo-img {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+}
 
 .logo-icon {
   width: 42px;

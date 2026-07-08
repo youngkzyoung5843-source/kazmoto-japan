@@ -66,6 +66,18 @@ img { max-width: 100%; height: auto; }
 
 .logo:hover { text-decoration: none; }
 
+.logo-wordmark {
+  display: block;
+  height: 34px;
+  width: auto;
+}
+
+.logo-wordmark--footer {
+  height: 30px;
+  margin-bottom: 12px;
+  opacity: 0.95;
+}
+
 .logo-mark {
   font-size: 20px;
   font-weight: 700;
